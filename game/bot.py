@@ -111,8 +111,10 @@ def guess_denomination(message):
 def show_card(message):
     bot.send_message(
         message.chat.id,
-        f"A card hath been conjured: {random_card_rank}{random_card_suit}. "
-        f"Say /start to play again.",
+        f'''
+A card hath been conjured: {random_card_rank}{random_card_suit}.
+Say /start to play again.
+        '''
     )
 
 
