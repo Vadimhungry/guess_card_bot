@@ -2,7 +2,7 @@ import telebot
 import os
 from dotenv import load_dotenv
 from random import choice
-import handlers.commence
+import handlers.start
 import handlers.ready_checker
 import handlers.game_router
 import handlers.guess_hue
@@ -22,9 +22,9 @@ random_card_rank = choice(CARD_RANK)
 random_card_suit = choice(CARD_SUIT)
 
 
-@bot.message_handler(commands=["commence"])
-def commence(message):
-    bot.reply_to(message, handlers.commence.GREETING)
+@bot.message_handler(commands=["start"])
+def start(message):
+    bot.reply_to(message, handlers.start.GREETING)
     bot.register_next_step_handler(message, ready_checker)
 
 
