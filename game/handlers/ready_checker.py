@@ -17,7 +17,7 @@ Declare the number of the option and presseth enter.
 REPLY_TO_NO = """
  Thy spirit is yet weak.
  Partake in a repast at the tavern and return anon.
- Awaken me with the enchanted word "/сommence" upon thy return.
+ Awaken me with the enchanted word /start upon thy return.
  """
 
 REPLY_TO_UNDEFINED = """
